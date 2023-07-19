@@ -274,6 +274,7 @@
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
+    margin-bottom: 30px;
 }
 
 .play-details{
@@ -294,6 +295,9 @@
     color: #534C64;
 
 }
+.play-image{
+    position: relative;
+}
 .bodyImg{
     width: 350px;
 
@@ -301,9 +305,9 @@
 
 .overImg img{
     width: 150px;
-    position: relative;
-    top: -152px;
-    left: -63px;
+    position: absolute;
+    bottom: -16px;
+    left: -80px;
 
 }
 
@@ -314,7 +318,7 @@
         flex-direction: column-reverse;
     }
     .play-details{
-        margin-top: -80px;
+        margin-top: 50px;
     }
     .play-details p{
         text-align: center;
@@ -326,20 +330,13 @@
         margin-left: 50px;
     }
     .bodyImg{
-        width: 70%;
         margin: 0px;
-    }
-    .overImg img{
-        width: 40%;
     }
 
 }
 @media screen and (min-width:576px) and (max-width:960px) {
     .play-details{
-        margin-right: 20px;
-    }
-    .overImg{
-        width: 100%;
+        margin-right: 60px;
     }
 }
 
