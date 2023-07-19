@@ -204,8 +204,8 @@
     background-image: url("./images/rectangle\ 7.png");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 250px;
-    height: 260px;
+    width: 300px;
+    height: 350px;
     display: flex;
     border: 1px solid transparent;
     border-radius: 10px;
@@ -248,7 +248,7 @@
         flex-direction: column;
     }
     .hoverSection{
-        width:178px;
+        width:230px;
     }
     .hoverSection:hover{
         border-radius:0%;
@@ -264,7 +264,7 @@
         margin-top: 60px;
     }
     .hoverSection{
-        width: 340px;
+        width: 345px;
         height: 400px;
     }
     .hoverSection:hover{
