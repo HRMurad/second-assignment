@@ -162,3 +162,105 @@
         margin: 0px;
     }
 }
+
+/* video section style */
+
+
+.videoTitle{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.videoSection h1 span{
+    color: rgb(228,144,220);
+}
+.videoDesc{
+    text-align: center;
+    font-size: 12px;
+    color: #534C64;
+
+}
+.videoCard{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    margin: 22px 100px;
+}
+
+.videoCard img{
+    width: 100%;
+}
+.videoCard p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #534C64;
+}
+.hoverSection{
+    background-image: url("./images/rectangle\ 7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 267px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hoverSection i{
+    color: white;
+    font-weight: 500;
+    font-size: 29px;
+}
+.hoverSection p{
+    color: white;
+    font-size: 18px;
+}
+.hover{
+    visibility: hidden;
+    font-size: 22px;
+    text-align:center;
+}
+.hoverSection:hover .hover{
+    visibility: visible;
+}
+.hoverSection:hover {
+    background: linear-gradient(rgba(57, 45, 45, 0.7), rgba(152, 106, 106, 0.7)), url("./images/rectangle 7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    border-radius: 10px;
+}
+
+
+/* video section responsive */
+
+@media screen and (max-width:576px) {
+    .videoCard{
+        flex-direction: column;
+    }
+    .card-3 p{
+        text-align: center;
+    }
+    .hoverSection:hover{
+        border-radius: 50%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    .videoCard{
+        flex-direction: column;
+    }
+
+    .videoSection{
+        margin-top: 60px;
+    }
+    .card-3 p{
+        text-align: center;
+    }
+
+    .hoverSection:hover{
+        border-radius: 50%;
+    }
+}
