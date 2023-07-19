@@ -204,9 +204,10 @@
     background-image: url("./images/rectangle\ 7.png");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 240px;
-    height: 267px;
+    width: 280px;
+    height: 277px;
     display: flex;
+    border: 1px solid transparent;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
@@ -235,6 +236,8 @@
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 
@@ -244,13 +247,11 @@
     .videoCard{
         flex-direction: column;
     }
-    .card-3 p{
-        text-align: center;
-        margin: 0px;
-
+    .hoverSection{
+        width:224px;
     }
     .hoverSection:hover{
-        border-radius: 50%;
+        border-radius:0%;
     }
 }
 
@@ -262,12 +263,12 @@
     .videoSection{
         margin-top: 60px;
     }
-    .card-3 p{
-        text-align: center;
+    .hoverSection{
+        width: 340px;
+        height: 400px;
     }
-
     .hoverSection:hover{
-        border-radius: 50%;
+        border-radius:0%;
     }
 }
 
