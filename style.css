@@ -242,6 +242,8 @@
     }
     .card-3 p{
         text-align: center;
+        margin: 0px;
+
     }
     .hoverSection:hover{
         border-radius: 50%;
@@ -320,6 +322,9 @@
     .play-details h1{
         text-align: center;
     }
+    .play-image{
+        margin-left: 50px;
+    }
     .bodyImg{
         width: 70%;
         margin: 0px;
@@ -335,5 +340,217 @@
     }
     .overImg{
         width: 100%;
+    }
+}
+
+/* career style */
+
+.careerSection{
+    background-color: rgb(255,66,165);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.careerDetails{
+    margin: 20px 0px 20px 100px;
+
+}
+.careerDetails h1{
+    margin-bottom: 10px;
+}
+.careerDetails p{
+    font-size: 12px;
+    color: rgb(216, 221, 225);
+    margin-bottom: 20px;
+}
+.careerList{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+.left-side{
+    text-align: start;
+    font-size: 14px;
+}
+.right-side{
+    text-align: end;
+    font-size: 14px;
+
+}
+.btnCareer button{
+    padding: 12px 22px;
+    border-radius: 42px;
+    border: none;
+    text-transform: uppercase;
+    color: rgb(123, 13, 13);
+}
+.careerImg img{
+    width: 400px;
+}
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+    .careerSection{
+        flex-direction: column-reverse;
+    }
+    .careerImg img{
+        width: 100%;
+    }
+    .careerDetails{
+        margin: 0px;
+    }
+    .careerDetails h1, .careerDetails p{
+        text-align: center;
+    }
+    
+    .btnCareer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+}
+
+
+/* icon section */
+
+
+.iconSection{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+.iconList{
+    display: grid;
+    grid-template-columns: repeat(5,130px);
+    gap: 20px;
+}
+
+.iconList div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: transparent;
+    border-radius: 40px;
+    padding: 3px;
+    transition: transform 0.2s ease-in-out;
+}
+.iconList div:hover{
+    border: .5px solid red;
+    color: tomato;
+    background-color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.iconList div img{
+    width: 30px;
+}
+.iconList div p{
+    font-size: 10px;
+}
+
+@media screen and (max-width:576px) {
+    .iconList{
+        grid-template-columns: repeat(3,60px);
+    }
+    .iconList div p{
+        font-size: 6px;
+    }
+    .iconList div img{
+        width: 20px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:960px) {
+    .iconList{
+        grid-template-columns: repeat(4,90px);
+    }
+}
+
+/* footer style */
+
+.foterSection{
+    text-align: center;
+    background-color: rgb(11,2,35);
+    color: white;
+    padding: 70px 0px;
+}
+
+.footerTitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px
+}
+
+.footerTitle img{
+    margin-right: 10px;
+}
+
+.footerTitle h1{
+    font-size: 46px;
+    font-weight: 500;
+}
+.footerTitle h1 span{
+    color: red;
+}
+
+.footerMenu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerMenu li{
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.footerIcons i{
+    font-size: 26px;
+    padding: 14px;
+    margin-bottom: 30px;
+}
+
+.footerPolicy ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerPolicy li{
+    padding: 10px;
+    font-size: 12px;
+    color: #827b92;
+    margin-bottom: 10px;
+
+}
+.footerCopyRight p{
+    font-size: 12px;
+    color: #827b92;
+
+}
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+    .footerMenu li{
+        font-size: 12px;
+    }
+    .footerMenu ul{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footerIcons{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footerPolicy ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
     }
 }
