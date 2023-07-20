@@ -20,10 +20,10 @@
   
   /* common style  */
   .container {
-    max-width: 1140px;
+    /* max-width: 1140px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: auto;
+    margin: auto; */
   }
   
 /* navbar style */
@@ -226,8 +226,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 240px;
-    height: 260px;
+    width: 290px;
+    height: 360px;
     display: flex;
     border: 1px solid transparent;
     border-radius: 10px;
@@ -270,7 +270,7 @@
         flex-direction: column;
     }
     .hoverSection{
-        width:200px;
+        width:222px;
     }
     .hoverSection:hover{
         border-radius:0%;
