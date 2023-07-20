@@ -1,15 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;800&display=swap');
 
 
-*{
-    font-family: 'Work Sans', sans-serif;
+/* universal style  */
+
+* {
     margin: 0;
     padding: 0;
-
-}
-
-body{
-}
+  }
+  
+  /* elements selector style  */
+  
+  body {
+    font-family: "Work Sans", sans-serif;
+  }
+  
+  section {
+    padding: 3.5rem 0;
+  }
+  
+  /* common style  */
+  .container {
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+  }
+  
 /* navbar style */
 
 .navBar{
@@ -68,7 +84,7 @@ body{
     margin-right: 8px;
 }
 
-/* navbanner style */
+/* nav banner style */
 
 .navBanner{
     background-color: rgb(251,247,253);
@@ -207,8 +223,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 300px;
-    height: 350px;
+    width: 240px;
+    height: 260px;
     display: flex;
     border: 1px solid transparent;
     border-radius: 10px;
@@ -251,7 +267,7 @@ body{
         flex-direction: column;
     }
     .hoverSection{
-        width:230px;
+        width:200px;
     }
     .hoverSection:hover{
         border-radius:0%;
@@ -335,7 +351,7 @@ body{
         text-align: center;
     }
     .play-image{
-        margin-left: 50px;
+        margin-left: 70px;
     }
     .bodyImg{
         width: 100%;
@@ -415,7 +431,7 @@ body{
         width: 100%;
     }
     .careerDetails{
-        margin: 0px;
+        margin: 12px;
     }
     .careerDetails h1, .careerDetails p{
         text-align: center;
@@ -432,16 +448,13 @@ body{
 
 /* icon section */
 
-
-.iconSection{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 60px;
-}
 .iconList{
-    display: grid;
-    grid-template-columns: repeat(5,130px);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+    justify-content: center;
+    margin-bottom: 30px;
+
 }
 
 .iconList div{
@@ -450,7 +463,6 @@ body{
     justify-content: space-evenly;
     border: .5px solid transparent;
     border-radius: 40px;
-    padding: 3px;
     transition: transform 0.2s ease-in-out;
 }
 .iconList div:hover{
@@ -470,7 +482,8 @@ body{
 
 @media screen and (max-width:576px) {
     .iconList{
-        grid-template-columns: repeat(3,60px);
+        grid-template-columns: repeat(3,1fr);
+        gap: 35px;
     }
     .iconList div p{
         font-size: 6px;
@@ -481,7 +494,8 @@ body{
 }
 @media screen and (min-width:576px) and (max-width:960px) {
     .iconList{
-        grid-template-columns: repeat(5,90px);
+        grid-template-columns: repeat(5,1fr);
+        gap: 90px;
     }
 }
 
