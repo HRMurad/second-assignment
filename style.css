@@ -451,9 +451,9 @@
 .iconList{
     display: flex;
     flex-wrap: wrap;
-    gap: 120px;
+    gap: 40px;
     justify-content: center;
-    margin-bottom: 30px;
+    margin: 0px 120px;
 
 }
 
@@ -463,11 +463,13 @@
     justify-content: space-evenly;
     border: .5px solid transparent;
     border-radius: 40px;
+    padding: 6px;
     transition: transform 0.2s ease-in-out;
 }
 .iconList div:hover{
     border: .5px solid red;
     color: tomato;
+    padding: 6px;
     background-color: white;
     cursor: pointer;
     transform: scale(1.1);
@@ -484,6 +486,7 @@
     .iconList{
         grid-template-columns: repeat(3,1fr);
         gap: 35px;
+        margin: 0px;
     }
     .iconList div p{
         font-size: 6px;
@@ -495,7 +498,8 @@
 @media screen and (min-width:576px) and (max-width:960px) {
     .iconList{
         grid-template-columns: repeat(5,1fr);
-        gap: 90px;
+        gap: 40px;
+        margin: 0px;
     }
 }
 
